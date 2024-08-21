@@ -1,6 +1,12 @@
 def count(num):
     syllables=0 #num of syllables
     strnum=str(num)
+    dot=strnum.find(".")
+    if(round(num)!=num):
+        return 0
+        #return 1+count(int(strnum[:dot]))+count(int(strnum[dot+1:]))
+    else:
+        strnum=str(int(num))
     if(abs(num)!= num):
         syllables += 3
         strnum=str(abs(num))

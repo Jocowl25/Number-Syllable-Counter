@@ -1,4 +1,5 @@
 Counts how many syllables are in a number when said out loud.
+Integers only. (May be updated in the future)
 
 For example:  <br>
 5, or "five", is 1 syllable, <br>
