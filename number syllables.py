@@ -19,18 +19,21 @@ def main():
         plt.title("Syllable Graph")
         plt.show()
     elif(mode=="n"):
-        num=input("Number to get Syllables for: ")
+        num=int(input("Number to get Syllables for: "))
         print(count(num))
     else:
         print("Not a valid response.")
         main()
         return
 def count(num):
+    syllables=0 #num of syllables
     strnum=str(num)
+    if(abs(num)!= num):
+        syllables += 3
+        strnum=str(abs(num))
     if(len(strnum) % 3 !=0):
         while(len(strnum) % 3 !=0):
             strnum= "0"+strnum
-    syllables=0 #num of syllables
     end=len(strnum)-1
     if(end>35):
         print("Error: Number too big") #I don't want to deal with varying prefixes past decillion
