@@ -11,7 +11,7 @@ def count(num):
     if(end>35):
         print("Error: Number too big") #I don't want to deal with varying prefixes past decillion
         return 0
-    if(num==0): return 2 #return 2 if 0 because ~edge case~
+    if(strnum=="0"): return 2 #return 2 if 0 because ~edge case~
     for i in range(0,len(strnum)):
         if(strnum[i]!="0"): 
             syllables += 1

@@ -8,6 +8,7 @@ def main():
         num=float(input("Number to get Syllables for: "))
         if(num!=round(num)):
             print("Error: Number is not an integer")
+            main()
             return
         print(count(int(num)))
     else:
