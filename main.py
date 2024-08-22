@@ -6,7 +6,10 @@ def main():
         graph()
     elif(mode=="n"):
         num=float(input("Number to get Syllables for: "))
-        print(count(num))
+        if(num!=round(num)):
+            print("Error: Number is not an integer")
+            return
+        print(count(int(num)))
     else:
         print("Not a valid response.")
         main()
