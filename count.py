@@ -7,7 +7,7 @@ def count(num):
         #return 1+count(int(strnum[:dot]))+count(int(strnum[dot+1:]))
     else:
         strnum=str(int(num))
-    if(abs(num)!= num):
+    if(num<0):
         syllables += 3
         strnum=str(abs(num))
     if(len(strnum) % 3 !=0):
